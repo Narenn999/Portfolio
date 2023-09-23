@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/steller.css">
+</head>
+<!-- Add this line to include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Function to handle the logo scale animation on hover
+  function scaleLogo() {
+    $('.logo-img').css({
+      transform: 'scale(1.2)' // Adjust the scale factor as needed
+    });
+  }
+
+  // Function to reset the logo to its original size
+  function resetLogo() {
+    $('.logo-img').css({
+      transform: 'scale(1)' // Return to the original scale
+    });
+  }
+
+  // Add the hover event listeners to trigger the animation
+  $('.logo-img').hover(scaleLogo, resetLogo);
+});
+</script>
+
+<body id="home">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo-img" src="assets/imgs/logo 2.svg" alt=""></a>
+            <!-- <a class="navbar-brand" href="#"><img src="assets/imgs/logo 2.svg" alt=""></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#testmonial">Testimonials</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Responsive Contact Us Form/index1.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="title">Narendra Jadaun</h6>
+                <p>Full Stack Developer/Graphics Designer</p>
+                <div class="buttons pt-3">
+                    <button class="btn btn-primary rounded">HIRE ME</button>
+                    <a class="btn btn-dark rounded" href="assets/Narendra Cv.pdf" download>DOWNLOAD CV</a>
+                </div>
+            </div>
+            <div class="img-holder">
+                <img src="assets/imgs/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="widget">
+            <div class="widget-item"><h2>30</h2><p>Happy Clients</p></div>
+            <div class="widget-item"><h2>20</h2><p>Projects Completed</p></div>
+            <div class="widget-item"><h2>5</h2><p>Years Experience</p></div>
+        </div>
+    </header>
+
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">Narendra Jadaun</h6>
+                    <p class="subtitle">Full Stack Developer/Graphics Designer</p>
+                    <p>Welcome to my portfolio! I'm Narendra Singh Jadaun, a skilled Full Stack Developer and Graphics Designer. I bring innovation and creativity to every project. My skills include full stack development and creating captivating graphics.</p>
+                    <button class="btn btn-primary rounded mt-3"><a href="assets/Narendra Cv.pdf" download>DOWNLOAD CV</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="section">
+        <div class="container text-center">
+            <h6 class="section-title mb-4">What I Do</h6>
+            <p>Welcome to my portfolio! I'm Narendra Singh Jadaun, a skilled Full Stack Developer and Graphics Designer.</p>
+            <div class="row">
+                <div class="1"><div class="card border"><div class="card-body"><h5>UI/UX Design</h5></div></div></div>
+                <div class="2"><div class="card border"><div class="card-body"><h5>Web Design</h5></div></div></div>
+                <div class="3"><div class="card border"><div class="card-body"><h5>App Design</h5></div></div></div>
+                <div class="4"><div class="card border"><div class="card-body"><h5>Graphics Design</h5></div></div></div>
+                <div class="5"><div class="card border"><div class="card-body"><h5>2d Animation</h5></div></div></div>
+                <div class="5"><div class="card border"><div class="card-body"><h5>Video Editing</h5></div></div></div>
+                <div class="4"><div class="card border"><div class="card-body"><h5>SEO</h5></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="section-title mb-4">Why Choose Me</h6>
+            <p>I'm a web and graphics designer who combines creativity and functionality to create stunning, seamless websites tailored to your unique needs. With a proven track record, I've worked across diverse industries, ensuring responsive designs that pay meticulous attention to detail.
+
+                Open communication, timely delivery, and tech-savvy expertise are all part of the package. Your satisfaction is my priority, and ongoing support is guaranteed. Let's make your digital presence stand out - start our creative journey today!</p>
+            
+            </div>
+                <!-- <div class="row">
+                <div class="col-sm-6"><h6 class="mb-3">Photoshop</h6><div class="progress"><div class="progress-bar bg-primary" style="width: 89%;">89%</div></div></div>
+                <div class="col-sm-6"><h6 class="mb-3">Web Design</h6><div class="progress"><div class="progress-bar bg-primary" style="width: 83%;">83%</div></div></div>
+                <div class="col-sm-6"><h6 class="mb-3">App Design</h6><div class="progress"><div class="progress-bar bg-primary" style="width: 95%;">95%</div></div></div>
+                <div class="col-sm-6"><h6 class="mb-3">SEO</h6><div class="progress"><div class="progress-bar bg-primary" style="width: 90%;">90%</div></div></div>
+            </div> -->
+       
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="section-title mb-4">Check My Works</h6>
+            <p>Explore my portfolio of captivating designs.</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="https://cdn.pixabay.com/photo/2015/03/01/11/29/mockup-654585_1280.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Web Development</h5>
+                                <a href="https://iridescent-brioche-01b731.netlify.app"><i class="ti-zoom-in"></i></a>
+                                <a href="https://dancing-fairy-400b18.netlify.app"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://img.freepik.com/free-vector/flat-world-graphics-day-illustration_23-2148880103.jpg?w=740&t=st=1695368367~exp=1695368967~hmac=099bde72c6295dbc080a26a509c3a4587b98bb5a68df70dda22c668ca369041b" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Graphics Design</h5>
+                                <a href="https://www.behance.net/narendrajadaun"><i class="ti-zoom-in"></i></a>
+                                <a href="https://www.behance.net/narendrajadaun"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="https://cdn.pixabay.com/photo/2017/04/24/09/25/horse-2255876_1280.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Animation</h5>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-zoom-in"></i></a>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?w=1060&t=st=1695368274~exp=1695368874~hmac=d371ab6b4283f9315aa09c297eab0432db45e8174a625c31306a40218087d2cc" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>UI/UX</h5>
+                                <a href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/1fe989161484551.63c645bcb71f3.jpg"><i class="ti-zoom-in"></i></a>
+                                <a href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/1fe989161484551.63c645bcb71f3.jpg"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="https://img.freepik.com/free-vector/seo-concept-illustration_24908-61530.jpg?w=826&t=st=1695368439~exp=1695369039~hmac=1d2e699d6cc9334685c410dcb039ac9ec6060db6109c5e06743b1d57eb36f5b4" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>SEO</h5>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-zoom-in"></i></a>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4f12ea162319587.63d39ee8f2fc4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Product Design</h5>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-zoom-in"></i></a>
+                                <a href="https://github.com/Narenn999/Web-project/blob/main/error.jpg?raw=true"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
