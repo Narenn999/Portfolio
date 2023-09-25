@@ -35,7 +35,39 @@ $(document).ready(function() {
 });
 </script>
 <style>
-    /* Add CSS styles for the animation */
+    /* Updated CSS for the "What I Do" section */
+#service .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#service .card {
+    width: 100%;
+    margin: 10px;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#service .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+#service .card-body h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    #service .card {
+        flex-basis: 45%; /* Adjust this value for spacing */
+    }
+}
+
+    /* Updated CSS for the text animation */
     .animate-text {
         display: inline-block;
         animation: textAnimation 2s infinite alternate !important;
@@ -51,9 +83,52 @@ $(document).ready(function() {
             opacity: 0.8;
         }
     }
-</style>
-<style>
-    /* Default styles for larger screens */
+    
+    /* Updated CSS for the background image on mobile */
+    .img-holder {
+        float: left !important;
+        width: 50% !important; /* Adjust this value as needed */
+        padding: 20px !important;
+    }
+    
+    .img-holder img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+    @media (max-width: 768px) {
+        .img-holder {
+            background-image: url('assets/imgs/avatar.png') !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            width: 100% !important;
+            padding: 100px 0 !important; /* Adjust padding as needed */
+            text-align: center !important;
+        }
+    
+        .img-holder img {
+            display: none; /* Hide the image on mobile */
+        }
+    }
+    /* Updated CSS for the text animation */
+.animate-text {
+    display: inline-block !important;
+    animation: textAnimation 2s infinite alternate !important;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+    100% {
+        transform: scale(1.1) !important;
+        opacity: 0.8 !important;
+    }
+}
+
+/* Updated CSS for the background image on mobile */
 .img-holder {
     float: left !important;
     width: 50% !important; /* Adjust this value as needed */
@@ -68,14 +143,40 @@ $(document).ready(function() {
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
     .img-holder {
-        float: none !important;
+        background-image: url('assets/imgs/avatar.png') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
         width: 100% !important;
-        padding: 0 !important;
+        padding: 100px 0 !important; /* Adjust padding as needed */
+        text-align: center !important;
+    }
+
+    .img-holder img {
+        display: none !important; /* Hide the image on mobile */
     }
 }
 
 </style>
+
+
 <script>
+    // JavaScript for card animations
+const cards = document.querySelectorAll('#service .card');
+
+cards.forEach((card, index) => {
+    card.style.transitionDelay = `${index * 100}ms`;
+});
+
+// Function to add animation class to cards
+function addAnimationClass() {
+    cards.forEach((card) => {
+        card.classList.add('animate-card');
+    });
+}
+
+// Add the animation class when the page is loaded
+window.addEventListener('load', addAnimationClass);
+
     // JavaScript for text animation
     const animatedTextElements = document.querySelectorAll('.animate-text');
     let currentIndex = 0;
@@ -88,7 +189,25 @@ $(document).ready(function() {
 
     setInterval(animateText, 2000); // Change text every 2 seconds
 </script>
+<script>
+    // JavaScript for changing job titles
+    const jobTitle = document.querySelector('.title');
+    const jobTitles = [
+        "Full Stack Developer",
+        "Graphics Designer",
+        "UI/UX Designer",
+        "Web Developer"
+        // Add more job titles as needed
+    ];
+    let currentIndex = 0;
 
+    function animateJobTitle() {
+        jobTitle.textContent = jobTitles[currentIndex];
+        currentIndex = (currentIndex + 1) % jobTitles.length;
+    }
+
+    setInterval(animateJobTitle, 2000); // Change job title every 2 seconds
+</script>
 <body id="home">
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -257,5 +376,25 @@ $(document).ready(function() {
             </div>
         </div>
     </section>
+    <script>
+        // JavaScript for text animation
+        const jobTitle = document.getElementById('jobTitle');
+        const jobTitles = [
+            "Full Stack Developer",
+            "Graphics Designer",
+            "UI/UX Designer",
+            "Web Developer"
+            // Add more job titles as needed
+        ];
+        let currentIndex = 0;
+
+        function animateText() {
+            jobTitle.textContent = jobTitles[currentIndex];
+            currentIndex = (currentIndex + 1) % jobTitles.length;
+        }
+
+        // Change text every 2 seconds (adjust the time interval as needed)
+        setInterval(animateText, 2000);
+    </script>
 </body>
 </html>
