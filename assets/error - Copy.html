@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Common styles for all screen sizes */
+    .page_404 {
+      padding: 20px 0;
+      background: #fff;
+      font-family: 'Arvo', serif;
+    }
+
+    .four_zero_four_bg {
+      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+      background-size: cover;
+      height: 200px;
+      background-position: center;
+    }
+
+    .img {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .four_zero_four_bg h1 {
+      font-size: 60px;
+    }
+
+    .four_zero_four_bg h3 {
+      font-size: 40px;
+    }
+
+    .link_404 {
+      color: #fff!important;
+      padding: 10px 20px;
+      background: #39ac31;
+      margin: 20px 0;
+      display: inline-block;
+    }
+
+    .contant_box_404 {
+      margin-top: -20px;
+    }
+
+    /* Media Query for screens smaller than 768px (typical smartphones) */
+    @media (max-width: 768px) {
+      .four_zero_four_bg {
+        height: 100px;
+      }
+
+      .four_zero_four_bg h1 {
+        font-size: 40px;
+      }
+
+      .four_zero_four_bg h3 {
+        font-size: 30px;
+      }
+
+      .link_404 {
+        padding: 5px 10px;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page_404">
+    <div class="container">
+      <div class="row">	
+        <div class="col-sm-12 ">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <div class="four_zero_four_bg">
+              <h1 class="text-center">404</h1>
+              <div class="img">
+                <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="">
+              </div>
+              <h3 class="h2">Looks like you're lost</h3>
+              <p>The page you are looking for is not available!</p>
+              <!-- <a href="index.html" class="link_404">Go to Home</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
